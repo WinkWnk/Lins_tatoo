@@ -2,18 +2,10 @@
     text-decoration: none;
 }
 
+.hidden{
+  display:none;
+}
 
-/* header {
-    display: block; 
-  }
-  
-header.hidden {
-    display: none;
-  } */
-
-
-/* body{
-    background-image:url(/projetoTatoo/assets/imagens/WhatsApp\ Image\ 2023-08-03\ at\ 14.10.20.jpeg);
-    background-repeat:no-repeat;
-    background-size: cover;
-} */
+.visible {
+  display: block;
+}
