@@ -9,82 +9,169 @@
     <title>Projeto Tatoo</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark sticky-top" data-bs-theme="dark">
-        <div class="container">
-          <a class="navbar-brand " href="#">Lins Tattoo</a>
-  
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-5 mb-2 mb-lg-0">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Lins Tatoo</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active mx-md-5" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-md-5" aria-current="page" href="#">Faça Seu Orçamento</a>
-              </li>   
+                <a class="nav-link" href="#">Faça Seu Orçamento</a>
+              </li>
             </ul>
           </div>
         </div>
+      </div>
+      <!-- <div>
+        <img src="/assets/imagens/1.png" alt="" class="lins_img">
+      </div> -->
     </nav>
 
     <div class="d-flex justify-content-center bg-dark">
       <a><i class="fa-solid fa-arrow-up fs-5 justify-content-end rotate" id="seta"></i></a>
     </div>
 
-    <header id="header" class=" container-fluid bg-dark">
+    <header id="header" class="container-fluid bg-dark">
       <section class="container">
         <div class="row justify-content-center">
           <div class="col-lg-4 col-md-6 text-center mb-2 text-light">
             <img src="assets/perfil/perfil2.jpg" alt="Foto Mylena Colins" class="rounded-circle img-thumbnail mt-3">
             <h2 class="fw-normal">Mylena Colins</h2>
-            <p>Sou uma tatuadora apaixonada de 22 anos que encontra alegria em eternizar as melhores lembranças nas pessoas. Minha arte é uma celebração de momentos significativos, e estou aqui para transformar suas memórias em obras de arte duradouras.</p>           
+            <p class="lead">Sou uma tatuadora apaixonada de 22 anos que encontra alegria em eternizar as melhores lembranças nas pessoas. Minha arte é uma celebração de momentos significativos, e estou aqui para transformar suas memórias em obras de arte duradouras.</p>           
           </div>
         </div>
       </section>
     </header>
 
     <div class="container-fluid">
-      <h1 class="text-center mt-4 lead">Conheça meu trabalho e veja com qual estilo você mais se identifica!!!</h1>
+      <h1 class="text-center my-4 lead">Conheça meu trabalho e veja com qual estilo você mais se identifica!!!</h1>
     </div>
 
-    <main class="">
-      <div class="container col-8">
-        <div class="d-flex flex-column align-content-center justify-content-center bloco">
+    <main class="container">
+      <div class="flex-column justify-content-center">
 
-          <div class="">
-            <a href="/pages/Fineline.html"
-              class="btn d-flex align-items-center flex-column text-white fw-bolder bg-dark rounded-5"
-              type="button">
-              <p class="my-2">FINE LINE</p>
-            </a>
-          </div>
-
-          <div class="mt-3">
-            <a class="btn d-flex align-items-center flex-column text-white fw-bolder bg-dark rounded-5" type="button" href="/pages/Oldschool.html">
-              <p class="my-2">OLD SCHOOL</p>
-            </a>
-          </div>
-
-          <div class="mt-3">
-            <a class="btn d-flex align-items-center flex-column text-white fw-bolder bg-dark rounded-5" type="button" href="/pages/Blackwork.html">
-              <p class="my-2">BLACKWORK</p>
-            </a>
-          </div>
-
-          <div class="mt-3">
-            <a class="btn d-flex align-items-center flex-column text-white fw-bolder bg-dark rounded-5" type="button" href="/pages/Minimalismo.html">
-              <p class="my-2">MINIMALISMO</p>
-            </a>
-          </div>
-
+        <div class="mt-3 d-flex align-items-center justify-content-center">
+          <a class="btn text-white fw-bolder bg-dark btn_inicio rounded-5" type="button" href="/pages/Fineline.html">
+          <h5 class="my-2">FINE LINE</h5>
+          </a>
+          <a href="" data-bs-toggle="modal"
+          data-bs-target="#infoModal" class="p-2 info"><i class="fs-1 fa-solid fa-circle-info"></i></a>
         </div>
+
+        <div>
+          <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="meuModalLabel">Fine Line</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="lead">O estilo de tatuagem fine line é caracterizado por linhas finas e detalhadas. É uma técnica que se assemelha a desenhos a lápis. Este estilo é conhecido por sua sutileza e precisão. O fine line é muitas vezes feito em preto e cinza, mas também pode incorporar cores suaves para adicionar profundidade.</p>                                    
+                </div>
+                <div class="modal-footer">
+                  <a type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="item">Fechar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3 d-flex align-items-center justify-content-center">
+          <a class="btn text-white fw-bolder bg-dark btn_inicio rounded-5" type="button" href="/pages/Oldschool.html">
+          <h5 class="my-2">OLD SCHOOL</h5>
+          </a>
+          <a href="" data-bs-toggle="modal"
+          data-bs-target="#infoModal2" class="p-2 info"><i class="fs-1 fa-solid fa-circle-info"></i></a>
+        </div>
+
+        <div>
+          <div class="modal fade" id="infoModal2" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="meuModalLabel">Old School</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="lead">O estilo de tatuagem Old School, é caracterizado por desenhos ousados, contornos pretos nítidos e cores vibrantes. Os temas comuns incluem âncoras, andorinhas, corações, caveiras, rosas e outros motivos clássicos. Os desenhos são muitas vezes simplificados e estilizados, com uma paleta de cores limitada, geralmente vermelho, verde, amarelo e azul.</p>                                    
+                </div>
+                <div class="modal-footer">
+                  <a type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="item">Fechar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3 d-flex align-items-center justify-content-center">
+          <a class="btn d-flex align-items-center flex-column text-white fw-bolder bg-dark btn_inicio rounded-5" type="button" href="/pages/Blackwork.html">
+          <h5 class="my-2">BLACKWORK</h5>
+          </a>
+          <a href="" data-bs-toggle="modal"
+          data-bs-target="#infoModal3" class="p-2 info"><i class="fs-1 fa-solid fa-circle-info"></i></a>
+        </div>
+
+        <div>
+          <div class="modal fade" id="infoModal3" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="meuModalLabel">Blackwork</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="lead">O estilo de tatuagem blackwork se concentra no uso ousado de tinta preta ou, em alguns casos, outras cores escuras, como vermelho ou azul escuro. As tatuagens blackwork costumam ser altamente contrastantes, com áreas sólidas de tinta negra e detalhes mínimos. Pode incluir padrões geométricos, símbolos abstratos ou até mesmo designs inspirados em arte tribal.</p>                                    
+                </div>
+                <div class="modal-footer">
+                  <a type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="item">Fechar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3 d-flex align-items-center justify-content-center">
+          <a class="btn d-flex align-items-center flex-column text-white fw-bolder bg-dark btn_inicio rounded-5" type="button" href="/pages/Minimalismo.html">
+          <h5 class="my-2">MINIMALISTA</h5>
+          </a>
+          <a href="" data-bs-toggle="modal"
+          data-bs-target="#infoModal4" class="p-2 info"><i class="fs-1 fa-solid fa-circle-info"></i></a>
+        </div>
+
+        <div>
+          <div class="modal fade" id="infoModal4" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="meuModalLabel">Minimalista</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="lead">Tatuagem minimalista é uma forma de expressão artística na qual menos é mais. Nesse estilo, o foco está na simplicidade, na sutileza e na elegância. As tatuagens minimalistas geralmente apresentam linhas finas, formas geométricas simples e, por vezes, cores suaves, se houver alguma cor. Essas tatuagens são pequenas, discretas e muitas vezes carregam significados pessoais profundos para o portador.</p>                                    
+                </div>
+                <div class="modal-footer">
+                  <a type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="item">Fechar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </main>
   
 
-    <footer class="container-fluid bg-dark text-white text-center py-3">
+    <footer class="container-fluid bg-dark text-white text-center py-3 fixed-bottom">
       <section class="row">
         <div class="d-flex justify-content-center">
           <p> Todos os direitos reservados &copy;</p>
@@ -133,11 +220,3 @@
     <script src="/js/tatoo.js"></script>
 </body>
 </html>
-
-
-
-<!-- <p class="card-text">O estilo de tatuagem fine line é caracterizado por linhas finas e detalhadas. É uma técnica que se assemelha a desenhos a lápis. Este estilo é conhecido por sua sutileza e precisão. O fine line é muitas vezes feito em preto e cinza, mas também pode incorporar cores suaves para adicionar profundidade.</p> -->
-
-<!-- <p class="card-text">O estilo de tatuagem blackwork se concentra no uso ousado de tinta preta ou, em alguns casos, outras cores escuras, como vermelho ou azul escuro. As tatuagens blackwork costumam ser altamente contrastantes, com áreas sólidas de tinta negra e detalhes mínimos. Pode incluir padrões geométricos, símbolos abstratos ou até mesmo designs inspirados em arte tribal.</p> -->
-
-<!-- <p class="card-text">O estilo de tatuagem Old School, é caracterizado por desenhos ousados, contornos pretos nítidos e cores vibrantes. Os temas comuns incluem âncoras, andorinhas, corações, caveiras, rosas e outros motivos clássicos. Os desenhos são muitas vezes simplificados e estilizados, com uma paleta de cores limitada, geralmente vermelho, verde, amarelo e azul.</p> -->

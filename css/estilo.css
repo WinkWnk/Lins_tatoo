@@ -16,15 +16,25 @@
   color:rgb(242, 234, 234)
 }
 
+.btn_inicio{
+  padding: 15px;
+  width: 60%;
+}
+
+.info{
+  color:rgb(14, 47, 137);
+}
+
+
 .rotate{
   transform: rotate(180deg);
   transition: transform 0.3s ease;
 }
 
-.bloco {
-  height: 60vh;
-}
-
 .fundo{
   background-color: rgb(31, 30, 30);
+}
+
+.lins_img{
+  width: 60px;
 }
