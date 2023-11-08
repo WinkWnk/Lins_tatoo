@@ -2,15 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior:smooth;
 }
+
+/* Formatações header */
 
 .hidden{
   display:none;
 }
 
+.rotate{
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
 #seta{
   color:rgb(242, 234, 234)
 }
+
+/* Formatações main */
 
 .btn_inicio{
   padding: 15px;
@@ -24,21 +34,4 @@
 .bloco{
   height: 50vh;
   margin-bottom:60%;
-}
-
-.hidu{
-  scroll-behavior:smooth;
-}
-
-.rotate{
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-}
-
-.fundo{
-  background-color: rgb(31, 30, 30);
-}
-
-.lins_img{
-  width: 60px;
 }
